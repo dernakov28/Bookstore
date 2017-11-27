@@ -54,7 +54,7 @@ public class GenreController {
         for (Genre genre: repository.findAll()) {
             genres.add(genre);
         }
-        return new ResponseEntity<ArrayList<Genre>>(genres, HttpStatus.OK);
+        return new ResponseEntity<>(genres, HttpStatus.OK);
     }
 
 }
